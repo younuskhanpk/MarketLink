@@ -1,0 +1,262 @@
+{
+  "users": [
+    {
+      "id": "U-ADMIN",
+      "name": "Admin User",
+      "email": "admin@marketlink.com",
+      "phone": "0300-1111111",
+      "address": "Karachi HQ",
+      "passwordHash": "76b5084ae0f0431f5b4e4d5b6b5d16b77d9c7c12809dd2d3e9bcd8d8d0b7d8d0",
+      "role": "admin",
+      "status": "active",
+      "createdAt": "2026-01-10T09:00:00.000Z"
+    },
+    {
+      "id": "U-FARMER-1",
+      "name": "Green Valley Farms",
+      "email": "farmer@marketlink.com",
+      "phone": "0300-2222222",
+      "address": "Karachi East",
+      "passwordHash": "0a19c6f94f1fd96c47a6bd513f4b86b8be63d3d0c6534bf5a00d650ef20c8e4d",
+      "role": "farmer",
+      "status": "active",
+      "createdAt": "2026-02-05T10:30:00.000Z"
+    },
+    {
+      "id": "U-CUSTOMER-1",
+      "name": "Younus Khan",
+      "email": "customer@marketlink.com",
+      "phone": "0300-3333333",
+      "address": "Gulshan-e-Iqbal, Karachi",
+      "passwordHash": "f7d2f7657d0217f3d8c1521d9f8bace4011d6d7f2d9259d7ca1d8b57bd0f778f",
+      "role": "customer",
+      "status": "active",
+      "createdAt": "2026-02-18T12:00:00.000Z"
+    }
+  ],
+  "markets": [
+    {
+      "id": "M-001",
+      "name": "Sunday Farmers Market",
+      "address": "Clifton, Karachi",
+      "day": "Sunday",
+      "openingTime": "08:00 AM",
+      "closingTime": "02:00 PM",
+      "latitude": 24.8607,
+      "longitude": 67.0011,
+      "farmers": 12,
+      "status": "open"
+    },
+    {
+      "id": "M-002",
+      "name": "Karachi Organic Market",
+      "address": "Defence, Karachi",
+      "day": "Saturday",
+      "openingTime": "09:00 AM",
+      "closingTime": "01:00 PM",
+      "latitude": 24.7902,
+      "longitude": 67.0759,
+      "farmers": 8,
+      "status": "open"
+    },
+    {
+      "id": "M-003",
+      "name": "North Karachi Green Market",
+      "address": "North Karachi",
+      "day": "Friday",
+      "openingTime": "10:00 AM",
+      "closingTime": "03:00 PM",
+      "latitude": 24.9870,
+      "longitude": 67.1024,
+      "farmers": 10,
+      "status": "open"
+    }
+  ],
+  "farmers": [
+    {
+      "id": "U-FARMER-1",
+      "name": "Green Valley Farms",
+      "rating": 4.8,
+      "location": "Karachi Farmers Market",
+      "operatingDays": ["Saturday", "Sunday"],
+      "pickup": "09:00 AM - 02:00 PM",
+      "products": ["Fresh Tomatoes", "Potatoes", "Bell Peppers", "Apples"],
+      "specialty": "Organic Produce"
+    },
+    {
+      "id": "F-002",
+      "name": "Fresh Roots",
+      "rating": 4.7,
+      "location": "Defence Market",
+      "operatingDays": ["Friday", "Saturday"],
+      "pickup": "08:00 AM - 01:00 PM",
+      "products": ["Carrots", "Lettuce", "Mangoes"],
+      "specialty": "Fresh Vegetables"
+    },
+    {
+      "id": "F-003",
+      "name": "Organic Harvest",
+      "rating": 4.9,
+      "location": "Clifton Market",
+      "operatingDays": ["Sunday"],
+      "pickup": "09:30 AM - 12:30 PM",
+      "products": ["Milk", "Eggs", "Bread"],
+      "specialty": "Dairy & Bakery"
+    }
+  ],
+  "categories": [
+    "Vegetables",
+    "Fruits",
+    "Dairy",
+    "Bakery",
+    "Eggs",
+    "Meat",
+    "Other"
+  ],
+  "products": [
+    {
+      "id": "P-101",
+      "farmerId": "U-FARMER-1",
+      "marketId": "M-001",
+      "name": "Fresh Tomatoes",
+      "category": "Vegetables",
+      "price": 250,
+      "unit": "kg",
+      "stock": 25,
+      "description": "Fresh locally grown tomatoes harvested this morning.",
+      "image": "https://images.unsplash.com/photo-1546094096-0df4bcaaa337?auto=format&fit=crop&w=900&q=80",
+      "status": "available"
+    },
+    {
+      "id": "P-102",
+      "farmerId": "U-FARMER-1",
+      "marketId": "M-001",
+      "name": "Fresh Potatoes",
+      "category": "Vegetables",
+      "price": 180,
+      "unit": "kg",
+      "stock": 30,
+      "description": "Premium potatoes from local farm fields.",
+      "image": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=900&q=80",
+      "status": "available"
+    },
+    {
+      "id": "P-103",
+      "farmerId": "F-002",
+      "marketId": "M-002",
+      "name": "Sweet Apples",
+      "category": "Fruits",
+      "price": 450,
+      "unit": "kg",
+      "stock": 18,
+      "description": "Crisp and juicy apples from valley farms.",
+      "image": "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=900&q=80",
+      "status": "available"
+    },
+    {
+      "id": "P-104",
+      "farmerId": "F-002",
+      "marketId": "M-002",
+      "name": "Organic Carrots",
+      "category": "Vegetables",
+      "price": 220,
+      "unit": "kg",
+      "stock": 20,
+      "description": "Fresh organic carrots packed with nutrients.",
+      "image": "https://images.unsplash.com/photo-1447175008436-054170c2e979?auto=format&fit=crop&w=900&q=80",
+      "status": "available"
+    },
+    {
+      "id": "P-105",
+      "farmerId": "F-003",
+      "marketId": "M-001",
+      "name": "Farm Eggs",
+      "category": "Eggs",
+      "price": 380,
+      "unit": "dozen",
+      "stock": 22,
+      "description": "Free-range farm eggs from healthy hens.",
+      "image": "https://images.unsplash.com/photo-1518569656558-1f25e69d93d7?auto=format&fit=crop&w=900&q=80",
+      "status": "available"
+    },
+    {
+      "id": "P-106",
+      "farmerId": "F-003",
+      "marketId": "M-001",
+      "name": "Fresh Milk",
+      "category": "Dairy",
+      "price": 180,
+      "unit": "liter",
+      "stock": 40,
+      "description": "Pure farm milk with rich local taste.",
+      "image": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=900&q=80",
+      "status": "available"
+    }
+  ],
+  "pickupSlots": [
+    { "id": "SLOT-1", "marketId": "M-001", "label": "09:00 AM - 09:30 AM" },
+    { "id": "SLOT-2", "marketId": "M-001", "label": "09:30 AM - 10:00 AM" },
+    { "id": "SLOT-3", "marketId": "M-001", "label": "10:00 AM - 10:30 AM" },
+    { "id": "SLOT-4", "marketId": "M-001", "label": "10:30 AM - 11:00 AM" }
+  ],
+  "orders": [
+    {
+      "id": "ML1025",
+      "customerId": "U-CUSTOMER-1",
+      "farmerId": "U-FARMER-1",
+      "marketId": "M-001",
+      "pickupSlotId": "SLOT-3",
+      "status": "ACCEPTED",
+      "orderDate": "2026-09-20T08:00:00.000Z",
+      "total": 950,
+      "items": [
+        { "productId": "P-101", "name": "Fresh Tomatoes", "quantity": 2, "price": 250 },
+        { "productId": "P-103", "name": "Sweet Apples", "quantity": 1, "price": 450 }
+      ]
+    },
+    {
+      "id": "ML1026",
+      "customerId": "U-CUSTOMER-1",
+      "farmerId": "F-003",
+      "marketId": "M-001",
+      "pickupSlotId": "SLOT-2",
+      "status": "READY FOR PICKUP",
+      "orderDate": "2026-09-24T09:00:00.000Z",
+      "total": 560,
+      "items": [
+        { "productId": "P-105", "name": "Farm Eggs", "quantity": 1, "price": 380 },
+        { "productId": "P-106", "name": "Fresh Milk", "quantity": 1, "price": 180 }
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "id": "R-001",
+      "productId": "P-101",
+      "customerId": "U-CUSTOMER-1",
+      "rating": 5,
+      "comment": "Fresh tomatoes and very good quality.",
+      "createdAt": "2026-09-22T14:00:00.000Z"
+    },
+    {
+      "id": "R-002",
+      "productId": "P-103",
+      "customerId": "U-CUSTOMER-1",
+      "rating": 4,
+      "comment": "Apples were very sweet and fresh.",
+      "createdAt": "2026-09-23T12:00:00.000Z"
+    }
+  ],
+  "favorites": [
+    { "id": "FAV-1", "userId": "U-CUSTOMER-1", "type": "farmer", "itemId": "U-FARMER-1", "name": "Green Valley Farms" },
+    { "id": "FAV-2", "userId": "U-CUSTOMER-1", "type": "product", "itemId": "P-101", "name": "Fresh Tomatoes" }
+  ],
+  "notifications": [
+    { "id": "N-1", "userId": "U-CUSTOMER-1", "type": "order-confirmed", "message": "Your order ML1025 has been accepted." },
+    { "id": "N-2", "userId": "U-CUSTOMER-1", "type": "ready-for-pickup", "message": "Your order ML1026 is ready for pickup." }
+  ],
+  "announcements": [
+    { "id": "A-1", "title": "Sunday Market Timing Changed", "message": "Sunday Market opens 30 minutes earlier this week due to high demand." }
+  ]
+}
+

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarketLink | Fresh Local Produce</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div>Fresh produce from trusted local farmers</div>
+        <div>Pickup market orders • No delivery • Pay at pickup</div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container navbar">
+        <a href="/index.html" class="logo">
+          <span class="logo-mark">M</span>
+          <span>MarketLink</span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="/index.html">Home</a>
+          <a href="/markets.html">Markets</a>
+          <a href="/products.html">Products</a>
+          <a href="#">Farmers</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </nav>
+
+        <div class="nav-actions" id="accountSlot"></div>
+      </div>
+    </header>
+
+    <main id="homePage">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="kicker">Fresh Local Produce</div>
+            <h1>Direct from local farmers to your pickup point.</h1>
+            <p class="lead">Discover weekly farmers markets, compare products, reserve fresh items before pickup, and support your local community.</p>
+            <div class="hero-actions">
+              <a href="/markets.html" class="btn btn-primary">Explore Markets</a>
+              <a href="/products.html" class="btn btn-secondary">Browse Products</a>
+            </div>
+            <div class="searchbox">
+              <span>🔎</span>
+              <input type="text" placeholder="Search products, farmers or markets..." />
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <img class="visual-main" src="https://images.unsplash.com/photo-1464226184884-fa52ac9fc4a9?auto=format&fit=crop&w=1200&q=80" alt="Farm produce" />
+            <div class="badge-box badge-top">
+              <strong>Fresh this Sunday</strong>
+              <div class="muted">12 farms active</div>
+            </div>
+            <div class="badge-box badge-bottom">
+              <strong>Order pickup</strong>
+              <div class="muted">10:00 AM - 10:30 AM</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>How MarketLink Works</h2>
+          </div>
+          <div class="steps">
+            <div class="step-card">
+              <div class="step-number">01</div>
+              <h3>Find a Market</h3>
+              <p class="muted">Browse nearby weekly markets by location and operating day.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-number">02</div>
+              <h3>Choose a Farmer</h3>
+              <p class="muted">View farmer profiles, ratings, products, and availability.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-number">03</div>
+              <h3>Reserve Products</h3>
+              <p class="muted">Pre-order from cart and choose pickup slot before cutoff.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-number">04</div>
+              <h3>Pickup Securely</h3>
+              <p class="muted">Visit the market and pay in person at the pickup window.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Featured Markets</h2>
+            <a href="/markets.html" class="btn btn-secondary">See all</a>
+          </div>
+          <div class="grid-3" id="featuredMarkets"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Featured Farmers</h2>
+            <a href="/markets.html" class="btn btn-secondary">View all</a>
+          </div>
+          <div class="grid-4" id="featuredFarmers"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Popular Products</h2>
+            <a href="/products.html" class="btn btn-secondary">Browse all</a>
+          </div>
+          <div class="grid-3" id="popularProducts"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="map-preview">
+            <div class="map-grid"></div>
+            <div class="map-pin pin-a"></div>
+            <div class="map-pin pin-b"></div>
+            <div class="map-pin pin-c"></div>
+            <div class="map-pin pin-d"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="ai-box">
+            <h2>Ask MarketLink AI</h2>
+            <div class="muted">What farmers have fresh tomatoes this Sunday?</div>
+            <input type="text" placeholder="Ask MarketLink AI..." />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="logo" style="color: white; margin-bottom: 0.5rem;">
+            <span class="logo-mark">M</span>
+            <span>MarketLink</span>
+          </div>
+          <div>Fresh, local, and directly from the market.</div>
+        </div>
+
+        <div class="nav-compact">
+          <a href="/index.html">Home</a>
+          <a href="/markets.html">Markets</a>
+          <a href="/products.html">Products</a>
+          <a href="#">About</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" id="loginModal">
+      <div class="modal-card">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+          <h2>Login</h2>
+          <button class="btn btn-secondary close-modal">Close</button>
+        </div>
+        <form id="loginForm">
+          <div class="field"><label>Email</label><input type="email" name="email" required /></div>
+          <div class="field" style="margin-top:1rem;"><label>Password</label><input type="password" name="password" required /></div>
+          <button class="btn btn-primary" style="width:100%; margin-top:1rem;">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal" id="registerModal">
+      <div class="modal-card">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+          <h2>Register</h2>
+          <button class="btn btn-secondary close-modal">Close</button>
+        </div>
+        <form id="registerForm">
+          <div class="form-grid">
+            <div class="field"><label>Full Name</label><input type="text" name="name" required /></div>
+            <div class="field"><label>Role</label>
+              <select name="role">
+                <option value="customer">Customer</option>
+                <option value="farmer">Farmer</option>
+              </select>
+            </div>
+            <div class="field"><label>Email</label><input type="email" name="email" required /></div>
+            <div class="field"><label>Phone</label><input type="text" name="phone" /></div>
+          </div>
+          <div class="field" style="margin-top:1rem;"><label>Address</label><textarea name="address"></textarea></div>
+          <div class="field" style="margin-top:1rem;"><label>Password</label><input type="password" name="password" required /></div>
+          <button class="btn btn-primary" style="width:100%; margin-top:1rem;">Register</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>
+
